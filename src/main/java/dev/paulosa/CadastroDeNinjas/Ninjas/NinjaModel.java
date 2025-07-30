@@ -1,6 +1,6 @@
-package dev.paulosa.CadastroDeNinjas;
+package dev.paulosa.CadastroDeNinjas.Ninjas;
 
-import dev.paulosa.CadastroDeNinjas.Missoes.Model.MissaoModel;
+import dev.paulosa.CadastroDeNinjas.Missoes.MissaoModel;
 import jakarta.persistence.*;
 import lombok.*;
 
