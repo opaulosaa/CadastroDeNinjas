@@ -3,6 +3,7 @@ package dev.paulosa.CadastroDeNinjas.Ninjas;
 import dev.paulosa.CadastroDeNinjas.Missoes.MissaoModel;
 import jakarta.persistence.*;
 import lombok.*;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
 @Table(name = "tb_cadastro")
@@ -25,6 +26,7 @@ public class NinjaModel {
 
     @ManyToOne
     @JoinColumn(name = "missoes_id")
+    @JsonIgnore
     private MissaoModel missoes;
 
 
