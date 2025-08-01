@@ -3,7 +3,7 @@ package dev.paulosa.CadastroDeNinjas.Missoes;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("missoes")
+@RequestMapping("/missoes")
 public class MissaoController {
 
     @GetMapping("/listar")
