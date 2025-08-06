@@ -1,5 +1,6 @@
 package dev.paulosa.CadastroDeNinjas.Ninjas;
 
+import io.swagger.v3.oas.annotations.Operation;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -17,6 +18,7 @@ public class NinjaController {
     }
 
     @GetMapping("/boasVindas")
+    @Operation(summary = "Mensagem de boas vindas", description = "Essa rota da uma mensagem de boas vindas pra quem a acessa")
     public String boasVindas(){
         return "Essa é a primeira mensagem nessa rota";
     }
