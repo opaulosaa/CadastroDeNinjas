@@ -10,6 +10,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
+@ToString(exclude = "missoes")
 public class NinjaModel {
 
 
